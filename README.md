@@ -1,2 +1,2 @@
 # schoolNotes
-My personal school notes. I share theme with my schoolmate :D
+My personal school notes. I share them with my schoolmate :D
