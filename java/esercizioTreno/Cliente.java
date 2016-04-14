@@ -8,7 +8,6 @@ public class Cliente extends Thread {
 
     /**
         Costruttore Completo
-        @param id identificatore cliente
         @param numPP numero Posti  da Prenotare
         @param isPov true se il cliente e` povero, false se e` ricco
         @param t1 Treno su cui effettuare le prenotazioni
