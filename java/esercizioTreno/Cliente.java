@@ -32,18 +32,11 @@ public class Cliente extends Thread {
     } // toString
 
     public void run() {
-
-        String res = "";
-        switch (t1.prenotaDisdici(numPP, isPov)) {
-        case -1:
-            res = "non riuscito";
-            break;
-        case 0:
-            res = "classe 0";
-            break;
-        case 1:
-            res = "classe 1";
+        int res = t1.prenotaDisdici(numPP, isPov);
+        if (res > -1) {
+            System.out.println(toString() + "  ||  Esito Prenotazione: penotato in classe " + res);
+        } else {
+            System.out.println(toString() + "  ||  Esito Prenotazione: non riuscito");
         }
-        System.out.println(toString() + "  ||  Esito Prenotazione: " + res);
     } // run
 }
