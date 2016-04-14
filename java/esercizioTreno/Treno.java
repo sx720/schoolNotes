@@ -8,7 +8,6 @@ public class Treno {
 
     /**
         Costruttore Completo
-        @param id Identificatore del Treno
         @param postiZero Numero di posti cat 0
         @param postiUno Numero di posti cat 1;
     */
