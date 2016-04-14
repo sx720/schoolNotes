@@ -1,12 +1,13 @@
 Attenzione ancora non funziona...
+
 ```
 Exception in thread "Thread-<n>" java.lang.IllegalMonitorStateException  
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.signalAll(AbstractQueuedSynchronizer.java:1954)  
 	at RisorsaLU.unlock(RisorsaLU.java:66)  
 	at ProcessoLU.run(ProcessoLU.java:36)  
 ```
-	
-<n> e' il  modo in cui esprimo il numero di thread, lo fa java, ma io lo metto cosi' per generalizzare a tutti i thread.
+  
+`<n>` e' il  modo in cui esprimo il numero di thread, lo fa java, ma io lo metto cosi' per generalizzare a tutti i thread.
 
  --- 
 Creato con pazienza da Marco Marchesin
