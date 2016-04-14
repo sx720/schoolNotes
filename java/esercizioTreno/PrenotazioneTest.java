@@ -14,10 +14,12 @@ public class PrenotazioneTest {
 
         for (int j = 0; j < i; j++) clienti[j].start();
 
-        try {
-            Thread.sleep(2000);
-        } catch(InterruptedException ex) {
-            System.out.println(ex);
+        for (int j = 0; j < i; j++) {
+            try {
+                clienti[j].join();
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
         }
 
         System.out.println(t1);
