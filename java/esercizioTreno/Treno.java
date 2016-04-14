@@ -8,6 +8,7 @@ public class Treno {
 
     /**
         Costruttore Completo
+        @param id Identificatore del Treno
         @param postiZero Numero di posti cat 0
         @param postiUno Numero di posti cat 1;
     */
@@ -29,7 +30,7 @@ public class Treno {
         @return esito del tentativo
     */
     public synchronized int prenotaDisdici(int nP, boolean isPov) {
-        if( postiUno - nP >=0 && postiUno - nP <= MAX_C1) {
+        if( nP <= postiUno && postiUno - nP <= MAX_C1) {
             postiUno -= nP;
             return 1;
         } else if(nP>0 && postiZero - nP >= 0 && !isPov) {
