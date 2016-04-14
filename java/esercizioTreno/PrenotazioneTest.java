@@ -1,7 +1,7 @@
 public class PrenotazioneTest {
     public static void main(String[] args) {
         Cliente clienti[] = new Cliente[100];
-        Treno t1  = new Treno(1 , 50, 50);
+        Treno t1  = new Treno(50, 50);
 
         int i = 0;
         // Istanzio 5 clienti ricchi che prenotano 10 posti ciascuno
