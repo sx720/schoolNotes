@@ -11,7 +11,7 @@ public class Treno {
         @param postiZero Numero di posti cat 0
         @param postiUno Numero di posti cat 1;
     */
-    public Treno(int id, int postiZero, int postiUno) {
+    public Treno(int postiZero, int postiUno) {
         this.ID = ++nextID;
         this.postiZero = postiZero;
         this.MAX_C0 = postiZero;
